@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iComp Soluciones - Agencia de Desarrollo de Software</title>
+    <meta name="description" content="iComp Soluciones — desarrollo de software FullStack. Caracas, Venezuela y Bucaramanga, Colombia.">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #06b6d4, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 antialiased">
+
+    <!-- Header Section -->
+    <header class="relative bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+            <div class="flex items-center gap-4 min-w-0">
+                <img src="logo.jpg" alt="iComp Soluciones" width="56" height="56" class="h-12 w-12 md:h-14 md:w-14 shrink-0 rounded-full object-cover ring-2 ring-violet-500/40">
+                <div class="min-w-0">
+                    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">iComp <span class="gradient-text">Soluciones</span></h1>
+                    <p class="text-violet-400 font-semibold uppercase tracking-wider text-xs md:text-sm">Agencia de Software | Desarrollo FullStack</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end text-sm text-slate-600 dark:text-slate-400">
+                <a href="mailto:icompsoluciones@gmail.com" class="hover:text-violet-300 transition-colors">icompsoluciones@gmail.com</a>
+                <span class="hidden sm:inline text-slate-500">•</span>
+                <span class="font-medium text-slate-900 dark:text-slate-100">+10 Años de Experiencia</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- Hero / CTA -->
+    <section class="rounded-[2rem] border border-slate-800 bg-slate-950/95 p-10 lg:p-12 shadow-2xl ring-1 ring-white/5 overflow-hidden">
+        <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px] items-start">
+            <div class="space-y-6">
+                <p class="text-sm font-semibold uppercase tracking-[0.32em] text-violet-400">Soluciones FullStack para negocios en crecimiento</p>
+                <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-white">Transformamos tus ideas en plataformas digitales robustas y confiables.</h1>
+                <p class="max-w-3xl text-lg leading-8 text-slate-300">Acompañamos a empresas y emprendedores en el lanzamiento de productos web y móviles con arquitectura escalable, integración cloud y enfoque en la experiencia del usuario.</p>
+                <div class="flex flex-col gap-4 sm:flex-row">
+                    <a href="https://wa.me/573118002621?text=Hola%20iComp%20Soluciones%2C%20quiero%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:from-cyan-400 hover:to-violet-500">Contactar por WhatsApp</a>
+                    <a href="#contacto" class="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-400 hover:text-white">Solicitar propuesta</a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="rounded-[1.75rem] bg-slate-900/90 p-6 ring-1 ring-white/10">
+                    <p class="text-sm uppercase tracking-[0.24em] text-violet-400">Resultados rápidos</p>
+                    <h3 class="mt-4 text-2xl font-semibold text-white">Entrega en plazos claros</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Definimos rutas de lanzamiento ágiles y ejecutamos desarrollos estructurados con visibilidad desde el primer sprint.</p>
+                </div>
+                <div class="rounded-[1.75rem] bg-slate-900/90 p-6 ring-1 ring-white/10">
+                    <p class="text-sm uppercase tracking-[0.24em] text-violet-400">Soporte confiable</p>
+                    <h3 class="mt-4 text-2xl font-semibold text-white">Cloud & DevOps</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Implementamos infraestructura y despliegues que mantienen tu producto estable y preparado para crecer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas -->
+        <section class="rounded-[2rem] border border-slate-800 bg-slate-950/95 p-10 shadow-2xl ring-1 ring-white/5">
+            <div class="flex flex-col gap-6 xl:flex-row xl:items-start xl:justify-between">
+                <div class="max-w-3xl">
+                    <p class="text-sm font-semibold uppercase tracking-[0.32em] text-violet-400">Ámbitos clave</p>
+                    <h2 class="mt-4 text-3xl font-bold text-white">Soluciones completas para cada etapa de tu producto</h2>
+                    <p class="mt-4 text-lg leading-8 text-slate-400">Diseño, desarrollo y despliegue integrado para aplicaciones web, móviles y servicios industriales con foco en calidad y resultados.</p>
+                </div>
+                <div class="grid gap-4 md:grid-cols-2 xl:max-w-2xl">
+                    <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                        <p class="text-sm uppercase tracking-[0.24em] text-violet-400">Entrega segura</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Desarrollo FullStack</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-400">Desde prototipo hasta plataforma productiva con React, Node.js, Laravel y servicios cloud.</p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                        <p class="text-sm uppercase tracking-[0.24em] text-violet-400">Operaciones</p>
+                        <h3 class="mt-4 text-2xl font-semibold text-white">Cloud & DevOps</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-400">Infraestructura confiable en AWS/GCP, despliegues continuos y monitoreo proactivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="grid gap-4 md:grid-cols-3">
+            <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-violet-400">Impacto</p>
+                <h3 class="mt-4 text-2xl font-semibold text-white">Soluciones con ROI</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">Desarrollo enfocado en objetivos de negocio, eficiencia operativa y resultados medibles.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-violet-400">Rapidez</p>
+                <h3 class="mt-4 text-2xl font-semibold text-white">Entrega ágil</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">Metodologías ágiles y ciclos de desarrollo claros para lanzar MVPs y versiones iterativas.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                <p class="text-sm font-semibold uppercase tracking-[0.24em] text-violet-400">Confianza</p>
+                <h3 class="mt-4 text-2xl font-semibold text-white">Calidad profesional</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-400">Código limpio, buenas prácticas y un enfoque permanente en seguridad y escalabilidad.</p>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section>
+            <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-violet-400">Servicios</p>
+                    <h2 class="mt-3 text-3xl font-bold text-white">Lo que podemos hacer por tu proyecto</h2>
+                </div>
+                <a href="https://wa.me/573118002621?text=Hola%20iComp%20Soluciones%2C%20quiero%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center rounded-full border border-violet-500 bg-violet-500/10 px-5 py-3 text-sm font-semibold text-violet-300 hover:bg-violet-400/20 transition">Escríbenos ahora</a>
+            </div>
+            <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">Aplicaciones Web</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Interfaces modernas con React, Next.js, Angular o Vue para experiencias eficientes y accesibles.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">APIs y Microservicios</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Backend robusto con Node.js, Laravel, Django o Spring Boot para datos, autenticación y procesos críticos.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">Cloud & DevOps</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Deployment automatizado, contenedores, Kubernetes y gestión de infra en AWS/GCP para alta disponibilidad.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">Plataformas de Pago</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Pagos seguros, workflows financieros y experiencia de usuario confiable para soluciones fintech.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">Automatizaciones IA</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Integraciones de IA para automatizar flujos, análisis de datos y decisiones inteligentes con modelos adaptados a tu negocio.</p>
+                </div>
+                <div class="rounded-3xl border border-slate-800 bg-slate-900 p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-white">Aplicaciones Móviles</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-400">Apps nativas e híbridas con experiencia de usuario premium, sincronización en tiempo real y rendimiento sólido.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Portfolio -->
+        <section>
+            <h2 class="text-3xl font-bold text-white">Proyectos recientes impulsando resultados</h2>
+            <p class="mt-4 max-w-3xl text-slate-400">Más de una década entregando proyectos para fintech, retail y plataformas de pagos con arquitecturas escalables y operaciones alineadas a estándares empresariales.</p>
+            <div class="mt-10 space-y-8 border-l-2 border-slate-800 pl-8">
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-violet-600 rounded-full ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Plataformas Fintech · Cambio de divisas y billeteras</h3>
+                            <span class="text-sm text-slate-400">Sector financiero · 2025 — Actual</span>
+                        </div>
+                        <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">NestJS · React Native · AWS</span>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm leading-relaxed">iComp desarrolló y opera plataformas de cambio de divisas y billeteras digitales con énfasis en seguridad, cumplimiento normativo y experiencia móvil de alto rendimiento.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-600 rounded-full ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Retail · Gestión de precios y promociones</h3>
+                            <span class="text-sm text-slate-400">Comercio minorista · 2022 — 2023</span>
+                        </div>
+                        <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Kafka · Kubernetes · GCP</span>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm leading-relaxed">El equipo iComp diseñó microservicios de gestión de precios y despliegues en GCP con automatización, observabilidad y monitoreo continuo.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-600 rounded-full ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Pagos digitales · Pasarelas y CI/CD</h3>
+                            <span class="text-sm text-slate-400">Medios de pago · 2021 — 2022</span>
+                        </div>
+                        <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">React · Node.js · Azure DevOps</span>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm leading-relaxed">iComp implementó pasarelas de pago y pipelines CI/CD con foco en calidad, seguridad y entregas continuas para operaciones de alto volumen.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-1 w-4 h-4 bg-slate-600 rounded-full ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Sector farmacéutico · Transformación digital</h3>
+                            <span class="text-sm text-slate-400">Industria salud · 2018 — 2020</span>
+                        </div>
+                        <span class="rounded-full bg-slate-800 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">Laravel · Node.js · Vue · AWS</span>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm leading-relaxed">iComp lideró la digitalización de operaciones con intranet corporativa, sistema de citas, digiturno y gestión de licitaciones, integrando AWS, MySQL, PostgreSQL, SQL Server y SAP B1.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contacto" class="rounded-[2rem] border border-slate-800 bg-slate-900/95 p-10 shadow-2xl ring-1 ring-white/5">
+            <div class="md:flex md:items-center md:justify-between gap-8">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-violet-400">Contacto</p>
+                    <h2 class="mt-3 text-3xl font-bold text-white">Hablemos de tu próximo proyecto</h2>
+                    <p class="mt-4 max-w-2xl text-slate-400">Si buscas un socio tecnológico para construir, escalar o modernizar tu aplicación, estamos listos para ayudarte. Respondemos con rapidez y propuestas claras.</p>
+                </div>
+                <div class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/90 p-6">
+                    <a href="https://wa.me/573118002621?text=Hola%20iComp%20Soluciones%2C%20quiero%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" rel="noreferrer" class="block rounded-2xl bg-gradient-to-r from-cyan-500 to-violet-600 px-5 py-4 text-center text-sm font-semibold text-white transition hover:from-cyan-400 hover:to-violet-500">WhatsApp: +57 311 800 2621</a>
+                    <p class="text-sm text-slate-400">Correo: <a href="mailto:icompsoluciones@gmail.com" class="text-violet-300 hover:text-violet-200">icompsoluciones@gmail.com</a></p>
+                    <p class="text-sm text-slate-400">Oficinas: Caracas, Venezuela · Bucaramanga, Colombia</p>
+                    <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                        <a href="https://www.instagram.com/icompsoluciones" target="_blank" rel="noreferrer" class="text-violet-300 hover:text-cyan-300 transition" aria-label="Instagram">Instagram</a>
+                        <a href="https://x.com/icompsoluciones" target="_blank" rel="noreferrer" class="text-violet-300 hover:text-cyan-300 transition" aria-label="X (Twitter)">X</a>
+                        <a href="https://www.tiktok.com/@icompsoluciones" target="_blank" rel="noreferrer" class="text-violet-300 hover:text-cyan-300 transition" aria-label="TikTok">TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <img src="logo.jpg" alt="" width="48" height="48" class="mx-auto h-12 w-12 rounded-full object-cover opacity-90" aria-hidden="true">
+            <p class="mt-4 text-sm">© 2026 iComp Soluciones. Desarrollo de software a medida.</p>
+            <p class="mt-2 text-xs text-slate-500">Caracas, Venezuela · Bucaramanga, Colombia</p>
+            <div class="mt-4 flex justify-center gap-5 text-sm">
+                <a href="https://www.instagram.com/icompsoluciones" target="_blank" rel="noreferrer" class="hover:text-violet-300 transition">Instagram</a>
+                <a href="https://x.com/icompsoluciones" target="_blank" rel="noreferrer" class="hover:text-violet-300 transition">X</a>
+                <a href="https://www.tiktok.com/@icompsoluciones" target="_blank" rel="noreferrer" class="hover:text-violet-300 transition">TikTok</a>
+            </div>
+            <div class="mt-6 flex justify-center gap-6">
+                <span class="text-xs border border-slate-700 px-3 py-1 rounded-full uppercase tracking-tighter">Clean Code</span>
+                <span class="text-xs border border-slate-700 px-3 py-1 rounded-full uppercase tracking-tighter">Scalability</span>
+                <span class="text-xs border border-slate-700 px-3 py-1 rounded-full uppercase tracking-tighter">Security</span>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573118002621?text=Hola%20iComp%20Soluciones%2C%20quiero%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" rel="noreferrer" class="fixed bottom-6 right-6 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white shadow-2xl shadow-violet-500/30 transition hover:from-cyan-400 hover:to-violet-500" aria-label="WhatsApp">
+        <svg viewBox="0 0 448 512" width="28" height="28" class="fill-current" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path d="M380.9 97.1C339 55.2 285.7 32 230.1 32 103.3 32 0 135.3 0 262.1c0 46.3 12.1 91.4 35.1 130.8L0 480l92.2-29.1c35.6 19.5 76.1 29.7 119 29.7h.1c126.8 0 230-103.2 230-230 0-55.6-23.2-108.9-65.4-150.5zm-62.1 246.3c-5.5-2.8-32.6-16.1-37.7-17.9-5.1-1.8-8.8-2.8-12.5 2.8-3.7 5.5-14.4 17.9-17.7 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-28.9-75.6-65.6-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.5-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.7 57.4 2.8 3.7 39.3 60 95.3 84.1 13.3 5.7 23.7 9.1 31.8 11.7 13.4 4.3 25.6 3.7 35.2 2.3 10.7-1.6 32.6-13.3 37.3-26.1 4.7-12.8 4.7-23.8 3.3-26.1-1.4-2.3-5.1-3.7-10.6-6.5z" />
+        </svg>
+    </a>
+
+</body>
+</html>

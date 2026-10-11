@@ -69,7 +69,6 @@
     const data = new FormData(form);
 
     const name = data.get("name");
-    const email = "aicompsoluciones@gmail.com"; // data.get("email") || "No proporcionado";
     const business = data.get("business");
     const service = data.get("service");
     const detail = data.get("message");
@@ -96,7 +95,6 @@
       },
       body: JSON.stringify({
         name: name,
-        email: email,
         turnstileToken: turnstileToken,
         message: [
           `Empresa: ${business || "No indicada"}`,

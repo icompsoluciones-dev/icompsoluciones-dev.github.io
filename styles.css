@@ -25,7 +25,7 @@
 @media(max-width:1000px){.sector-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.service-grid-six{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.service-grid-six{grid-template-columns:1fr}.projects-section{padding:72px 0 76px}.sector-grid{grid-template-columns:1fr;gap:12px}.sector-card{min-height:220px}.projects-section .section-heading h2{font-size:37px}}
 
-/* TEMA OSCURO Ai comp Soluciones — revisión visual: elimina el bloque blanco superior */
+/* TEMA OSCURO Ai Comp Soluciones — revisión visual: elimina el bloque blanco superior */
 :root{
   --ink:#f4f5ff;
   --muted:#b2bddb;

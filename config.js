@@ -1,4 +1,4 @@
-/* CONFIGURACIÓN CENTRAL: completa aquí los datos oficiales de Ai comp Soluciones. */
+/* CONFIGURACIÓN CENTRAL: completa aquí los datos oficiales de Ai Comp Soluciones. */
 window.ICOMP_CONFIG = {
   // Número de WhatsApp en formato internacional, solo dígitos, sin +, espacios ni guiones.
   // Reemplaza el valor de ejemplo antes de activar el botón directo.

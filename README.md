@@ -1,4 +1,4 @@
-# Ai comp Soluciones — landing page
+# Ai Comp Soluciones — landing page
 
 Landing page responsive en HTML, CSS y JavaScript vanilla. No requiere instalación de dependencias ni compilación.
 

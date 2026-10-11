@@ -67,16 +67,54 @@
       return;
     }
     const data = new FormData(form);
+
+    const name = data.get("name");
+    const email = "aicompsoluciones@gmail.com"; // data.get("email") || "No proporcionado";
+    const business = data.get("business");
+    const service = data.get("service");
+    const detail = data.get("message");
+
     const message = [
-      `Hola ${config.companyName || "IComp Soluciones"}, quiero conversar sobre un proyecto.`,
-      `Nombre: ${data.get("name")}`,
-      data.get("business") ? `Empresa: ${data.get("business")}` : "",
-      `Servicio: ${data.get("service")}`,
-      `Detalle: ${data.get("message")}`
+      `Hola ${config.companyName || "AiComp Soluciones"}, quiero conversar sobre un proyecto.`,
+      `Nombre: ${name}`,
+      business ? `Empresa: ${business}` : "",
+      `Servicio: ${service}`,
+      `Detalle: ${detail}`
     ].filter(Boolean).join("\n");
     gtag('event', 'generate_lead', {
       method: 'whatsapp'
     });
+
     window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
+
+    // Enviar notificación por correo mediante Cloudflare Worker
+    fetch("/api/contacto  ", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: [
+          `Empresa: ${business || "No indicada"}`,
+          `Servicio: ${service || "No indicado"}`,
+          `Detalle: ${detail || "Sin detalles"}`
+        ].join("\n")
+      })
+    })
+    .then(async response => {
+      if (!response.ok) {
+        throw new Error(`Error HTTP ${response.status}`);
+      }
+
+      return response.json();
+    })
+    .then(result => {
+      console.log("Resultado del envío de correo:", result);
+    })
+    .catch(error => {
+      console.error("No se pudo enviar el correo:", error);
+    });
   });
 })();

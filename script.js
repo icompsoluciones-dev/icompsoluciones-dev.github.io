@@ -72,6 +72,9 @@
       `Servicio: ${data.get("service")}`,
       `Detalle: ${data.get("message")}`
     ].filter(Boolean).join("\n");
+    gtag('event', 'generate_lead', {
+      method: 'whatsapp'
+    });
     window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
   });
 })();

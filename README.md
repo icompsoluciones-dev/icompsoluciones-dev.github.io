@@ -40,6 +40,12 @@ El formulario no envía ni almacena datos en un servidor. Al activarse WhatsApp,
 
 Puede alojarse en cualquier hosting estático o servidor web. Si se publica detrás de un servidor propio, configura HTTPS y revisa que `config.js` contenga datos de contacto reales. Google Fonts requiere conexión a internet; el sitio conserva tipografías de respaldo si no está disponible.
 
+## SEO y rastreo
+
+La página usa `https://aicompsoluciones.com/` como URL canónica. `robots.txt` permite el rastreo público y referencia `sitemap.xml`, que contiene únicamente la página principal. Si cambia el dominio público, actualiza también las URL canónicas y sociales de `index.html`, el JSON-LD, `robots.txt` y `sitemap.xml`.
+
+Después de publicar, verifica en Google Search Console que el dominio esté validado, envía el sitemap y revisa la inspección de URL. La presencia de estos archivos no confirma que Google haya indexado la página.
+
 
 ## Servicios y sectores incorporados
 

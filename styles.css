@@ -66,3 +66,6 @@ body{
 .site-footer{width:100%;max-width:none;min-height:105px;padding:22px max(28px,calc((100% - 1180px)/2));background:#03091d;border-top:1px solid rgba(92,137,255,.24);color:#c3cde6}.site-footer>p,.footer-right{color:#9eafd2}.footer-brand{color:#f5f7ff}.footer-brand b{color:#67d7ff}.footer-right a{color:#67d7ff}
 .menu-toggle{background:rgba(11,24,61,.95);border-color:rgba(100,153,255,.4)}.menu-toggle span{background:#eff6ff}.main-nav .nav-cta{color:#fff}
 @media(max-width:720px){.site-header{height:78px;padding-inline:19px}.main-nav{background:#07122f;border-color:rgba(100,153,255,.35)}.main-nav>a{color:#edf3ff}.hero{padding:48px 19px 76px;min-height:0}.hero-art{min-height:355px}.service-card{box-shadow:none}.site-footer{padding:22px 19px}.ticker{margin-bottom:75px}}
+
+:focus-visible{outline:3px solid #49d8ff;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

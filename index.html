@@ -73,6 +73,7 @@
     <script src="gtag.js" defer></script>
     <script src="config.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -587,7 +588,9 @@
               placeholder="¿Qué te gustaría resolver?"
               required
             ></textarea
-            ><button class="button button-primary form-submit" type="submit">
+            >
+	          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFTpdXVXmkmO12Pv" data-theme="light"></div>
+            <button class="button button-primary form-submit" type="submit">
               Contactar por WhatsApp <span>↗</span>
             </button>
             <p class="form-note">

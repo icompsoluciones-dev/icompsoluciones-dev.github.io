@@ -73,6 +73,7 @@
     const business = data.get("business");
     const service = data.get("service");
     const detail = data.get("message");
+    const turnstileToken = data.get("cf-turnstile-response");
 
     const message = [
       `Hola ${config.companyName || "AiComp Soluciones"}, quiero conversar sobre un proyecto.`,
@@ -96,6 +97,7 @@
       body: JSON.stringify({
         name: name,
         email: email,
+        turnstileToken: turnstileToken,
         message: [
           `Empresa: ${business || "No indicada"}`,
           `Servicio: ${service || "No indicado"}`,
@@ -112,6 +114,9 @@
     })
     .then(result => {
       console.log("Resultado del envío de correo:", result);
+      if (window.turnstile) {
+        window.turnstile.reset();
+      }
     })
     .catch(error => {
       console.error("No se pudo enviar el correo:", error);
